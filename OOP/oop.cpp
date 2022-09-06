@@ -34,6 +34,27 @@ class UpdatedIdiot {
     }
 };
 
+class AnotherUpdatedIdiot: public Idiot {
+    public:
+    void say() {
+        cout << "hi" << endl;
+    }
+};
+
+class AnotherAnotherUpdatedIdiot: public AnotherUpdatedIdiot {
+    public:
+    void say1() {
+        cout << "bye" << endl;
+    }
+};
+
+class YetAnotherIdiot: public Idiot, public UpdatedIdiot {
+    public:
+    void wow() {
+        cout << "wow" << endl;
+    }
+};
+
 int main(void){
     Idiot nap;
     nap.name = "Napoleon Bonaparte";
@@ -56,4 +77,21 @@ int main(void){
     josh.getIQ();
     bob.setIQ(-55); //something something River Lethe
     bob.getIQ();
+ 
+    cout << endl;
+
+    AnotherUpdatedIdiot hi;
+    hi.name = "hi";
+    hi.say();
+    hi.genocide("hi");
+
+    cout << endl;
+
+    AnotherAnotherUpdatedIdiot bye;
+    bye.name = "bye";
+    bye.genocide("bye");
+    bye.say();
+    bye.say1();
+
+    cout << endl;
 }
