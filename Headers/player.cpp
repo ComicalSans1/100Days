@@ -17,4 +17,12 @@ int main(void) {
     cout << n1.CurrentHP << endl;
     n1.Heal(150);
     cout << n1.CurrentHP << endl;
+
+    cout << endl;
+
+    Player n2(1000, 10);
+    n2.Damage(300);
+    cout << n2.CurrentHP << endl;
+    n2.Heal(50);
+    cout << n2.CurrentHP << endl;
 }
