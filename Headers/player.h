@@ -23,3 +23,5 @@ class Player {
         CurrentHP = MaxHP;
     }
 };
+
+Player p1;
