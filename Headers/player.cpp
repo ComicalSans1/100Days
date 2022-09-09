@@ -28,5 +28,6 @@ int main(void) {
     cout << n2.CurrentHP << endl;
 
     Enemy e1("Goblin", 10);
-    
+    e1.attack(n1);
+    cout << n1.CurrentHP << endl;
 }
