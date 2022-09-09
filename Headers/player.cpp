@@ -1,5 +1,6 @@
 #include <iostream>
 #include "player.h"
+#include "enemy.h"
 using namespace std;
 
 int main(void) {
@@ -25,4 +26,7 @@ int main(void) {
     cout << n2.CurrentHP << endl;
     n2.Heal(50);
     cout << n2.CurrentHP << endl;
+
+    Enemy e1("Goblin", 10);
+    
 }
